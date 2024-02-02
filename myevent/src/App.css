@@ -1,0 +1,98 @@
+/* styles.css */
+/* Add these styles to your stylesheet */
+
+.header {
+  background-color: #333; /* Dark background color for the header */
+  padding: 10px;
+  color: white; /* Text color for the header */
+  height:400px;
+}
+
+.events-title {
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+}
+
+.category-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.category-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.category-nav a:hover {
+  background-color: #555; /* Darker background on hover */
+}
+
+.meteor-background {
+  /* Add styles for the meteor background */
+  background: url('https://www.istockphoto.com/photo/comet-in-the-starry-sky-gm532856780-94310417') center/cover;
+  /* You can replace 'path/to/meteor-image.jpg' with the actual path to your meteor image */
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 1000px;
+}
+.meteor-background h1{
+  width: 100%;
+}
+
+
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: white;
+}
+
+.event-category {
+  margin-bottom: 40px;
+}
+
+.event-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.event-card h3 {
+  color: #333;
+}
+
+.event-card p {
+  color: #666;
+}
+
+.view-details-btn {
+  display: inline-block;
+  background-color: #3498db;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.view-details-btn:hover {
+  background-color: #217dbb;
+}
+

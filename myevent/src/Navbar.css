@@ -1,0 +1,64 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #121d33; /* Dark bluish background color */
+    color: #deeae3f0; /* White text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow */
+    border-radius: 10px; /* Add border radius */
+    width: 80%; /* Set navbar width to 80% of the website */
+    margin: 0 auto; /* Center the navbar */
+  }
+  
+  .logo {
+    font-size: 1.5em; /* Adjust font size as needed */
+    font-weight: bold;
+  }
+  
+  .menu {
+    font-size: 1.2em; /* Adjust font size as needed */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Add spacing between navigation links */
+  }
+  
+  .nav-links li {
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .nav-links li:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff; /* White underline color on hover */
+    bottom: -5px;
+  }
+  
+  .auth {
+    font-size: 1.2em; /* Adjust font size as needed */
+  }
+  
+  .auth span {
+    margin: 0 10px; /* Add spacing between login and signout */
+    cursor: pointer;
+  }
+  
+  /* Add any additional styling based on your preferences */
+  
+  /* Animation for a smooth transition */
+  .navbar {
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .nav-links li::after {
+    transition: width 0.3s ease, background-color 0.3s ease;
+  }
+  
