@@ -1,0 +1,118 @@
+/* EventCard.module.css */
+
+/*.eventCard {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .cardContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem; /* Adjust padding as needed */
+ /* }
+  
+  .eventDetails {
+    color: #fff;
+  }
+  
+  .eventName {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .eventTag {
+    margin-top: 0.5rem;
+  }
+  
+  .eventDescription {
+    margin-top: 1rem;
+  }
+  
+  .cardActions {
+    align-self: flex-end;
+    margin-top: auto;
+  }
+  
+  .viewDetailsBtn {
+    text-transform: uppercase;
+  } 
+  /* EventCard.css */ 
+  /* EventCard.css */
+
+.Dashboard_eventBox__E3dhk {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 15px 4px 0;
+    border-radius: 8px;
+    background: linear-gradient(to top right, rgba(29, 90, 161, 0.6), rgba(20, 114, 79, 0.6));
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .Dashboard_eventImageBox__dxso_ {
+    padding: 10px;
+  }
+  
+  .Dashboard_eventImage__AAUGI {
+    -webkit-user-drag: none;
+    width: 300px;
+    aspect-ratio: auto 300 / 200;
+    height: 200px;
+  }
+  
+  .Dashboard_eventBodyBox__nynMn {
+    padding: 25px 0;
+    width: 100%;
+    height: 120px;
+  }
+  
+  .Dashboard_eventBodyTitle__on30a {
+    margin-top: -10px;
+    font-size: 1.3rem;
+    margin-left: 10px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  
+  .Dashboard_eventBodyTypes__pMiNE {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 65px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  .Dashboard_eventBodyTypes__pMiNE h5 {
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+  
+  .Dashboard_exploreEventButton__VLbHB {
+    background: green;
+    display: inline-block;
+    padding: 6px 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 4px;
+    bottom: 14px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .Dashboard_exploreEventButton__VLbHB a {
+    color: white;
+    text-decoration: none;
+  }
+  

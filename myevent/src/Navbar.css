@@ -2,6 +2,7 @@
 
 .navbar {
     background-color: #121d33; /* Dark bluish background color */
+    background-image: url('https://gifer.com/embed/6IX'); /* Use the meteor GIF */
     color: #deeae3f0; /* White text color */
     padding: 10px 20px; /* Adjust padding as needed */
     display: flex;
@@ -11,8 +12,11 @@
     border-radius: 10px; /* Add border radius */
     width: 80%; /* Set navbar width to 80% of the website */
     margin: 0 auto; /* Center the navbar */
+    transition: box-shadow 0.3s ease;
   }
-  
+  .nav-links li::after {
+    transition: width 0.3s ease, background-color 0.3s ease;
+  }
   .logo {
     font-size: 1.5em; /* Adjust font size as needed */
     font-weight: bold;

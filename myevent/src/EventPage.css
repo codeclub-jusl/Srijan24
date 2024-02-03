@@ -1,3 +1,16 @@
+/* EventPage.css */
+
+body {
+    /* Set the background image for the entire page */
+    background-image: url('https://images.unsplash.com/photo-1454817481404-7e84c1b73b4a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with the actual path */
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+  }
+  
+
 .event-page {
     position: relative;
   }
@@ -38,7 +51,8 @@
     width: 100%;
     text-align: center;
     position: absolute;
-    top: 14.25%; /* Adjust the percentage or use pixels to move it up or down */
+    top: 13.90%; /* Adjust the percentage or use pixels to move it up or down */
+    z-index: 1;
   }
   
   .events-navbar ul {
@@ -55,3 +69,18 @@
     padding: 10px;
     cursor: pointer;
   }
+  .event-cards-container {
+    position: relative;
+    top: -1350px; /* Adjust the pixels as needed to move it up */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f4f4f4; /* Adjust background color as needed */
+    background-image: url('https://images.unsplash.com/photo-1447433693259-c8549e937d62?q=80&w=1777&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with the actual path */
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  }
+  
+  /* EventPage.css */
