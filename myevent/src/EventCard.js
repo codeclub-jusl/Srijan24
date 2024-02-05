@@ -27,7 +27,7 @@ const EventCard = ({ eventName, eventTag, eventDescription, imageUrl }) => {
 export default EventCard; */
 // EventCard.js
 
-import React from 'react';
+/*import React from 'react';
 import './EventCard.css'; // Import the CSS file
 
 const EventCard = ({ title, types, imageUrl, exploreLink }) => {
@@ -44,6 +44,37 @@ const EventCard = ({ title, types, imageUrl, exploreLink }) => {
         <div className="Dashboard_eventBodyTypes__pMiNE">
           {dummyTypes.map((type, index) => (
             <h5 key={index}>{type}</h5>
+          ))}
+        </div>
+        <div className="Dashboard_exploreEventButton__VLbHB">
+          <a href={exploreLink}>Explore Event</a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default EventCard; */
+
+import React from 'react';
+import './EventCard.css'; // Import the CSS file
+
+const EventCard = ({ title, types, imageUrl, exploreLink }) => {
+  // Assign dummy values to types if it's undefined
+  const dummyTypes = types || ['Type A', 'Type B'];
+
+  return (
+    <div className="Dashboard_eventBox__E3dhk">
+      <div className="Dashboard_eventImageBox__dxso_">
+        <img alt="event_image" src={imageUrl} className="Dashboard_eventImage__AAUGI" loading="lazy" />
+      </div>
+      <div className="Dashboard_eventBodyBox__nynMn">
+        <h2 className="Dashboard_eventBodyTitle__on30a">{title}</h2>
+        <div className="event-card-types">
+          {dummyTypes.map((type, index) => (
+            <div key={index} className="event-card-tag">
+              {type}
+            </div>
           ))}
         </div>
         <div className="Dashboard_exploreEventButton__VLbHB">

@@ -115,4 +115,72 @@
     color: white;
     text-decoration: none;
   }
-  
+  /* EventCard.css */
+
+.event-card {
+  width: 300px; /* Set your desired width */
+  height: 400px; /* Set your desired height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 15px; /* Add some border-radius for rounded corners */
+  background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background for better visibility */
+}
+
+.event-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-card-title {
+  font-size: 24px; /* Set your desired font size */
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.event-card-types {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.event-card-types h5 {
+  font-size: 16px; /* Set your desired font size */
+  color: white;
+  background-color: #2196f3; /* Set your desired background color for types */
+  padding: 5px 10px;
+  border-radius: 5px; /* Add some border-radius for rounded corners */
+}
+
+.event-card-description {
+  font-size: 14px; /* Set your desired font size */
+  color: white;
+  margin-bottom: 10px;
+}
+
+.view-details-btn {
+  background-color: #4caf50; /* Set your desired background color for the button */
+  color: white;
+  font-size: 16px; /* Set your desired font size */
+}
+
+.view-details-btn:hover {
+  background-color: #45a049; /* Set your desired background color for button hover state */
+}
+.event-card-types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.event-card-tag {
+  font-size: 14px;
+  color: white;
+  background-color: #2196f3;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
