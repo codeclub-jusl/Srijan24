@@ -6,6 +6,7 @@ import React, { useState } from 'react';
 import Navbar from './Navbar';
 import EventCard from './EventCard'; // Assuming you have the EventCard component
 import './EventPage.css';
+import CircularNavbar from './CircularNavbar'; // Import the CircularNavbar component
 
 const EventPage = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -143,9 +144,11 @@ const EventPage = () => {
 
   return (
     <div className="event-page">
-      <Navbar tags={allTags} onTagClick={handleCategoryClick} />
+      <Navbar tags={allTags} onTagClick={handleCategoryClick} /> 
+      {/*<CircularNavbar categories={allTags} onCategoryClick={handleCategoryClick} />*/}
 
-      <div className="meteor-background" style={{ backgroundImage: 'url("https://img.freepik.com/free-photo/humanoid-robot-working-with-machine-factory-ai-generative_123827-23865.jpg?w=900&t=st=1707326092~exp=1707326692~hmac=65bce3ce3d926fa0b44d5abea939d2692aff08a8dbea5fe80eb37aba6198dc94")', backgroundSize: 'cover', backgroundPosition: 'center', width: '100%', height: '87.75vh', position: 'relative', marginBottom: 0 }}>
+
+      <div className="meteor-background" style={{ backgroundImage: 'url("https://img.freepik.com/free-vector/alien-planet-landscape-with-rocky-surface-lake_107791-25496.jpg?w=1060&t=st=1707334304~exp=1707334904~hmac=8b52d5b528b42406df8ac3aa995414cf2f077bc5b4d3cbf27c3db87747c2b374")', backgroundSize: 'cover', backgroundPosition: 'center', width: '100%', height: '87.75vh', position: 'relative', marginBottom: 0 }}>
 </div> 
  {/*<div className="meteor-background">
         <img
@@ -156,7 +159,7 @@ const EventPage = () => {
 </div>*/}
 
 
-      <h1 className="event-title">Events</h1> 
+      <h1 className="event-title" >Events</h1> 
 
       <div className="events-navbar">
         <ul>

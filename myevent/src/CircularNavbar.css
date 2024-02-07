@@ -1,0 +1,62 @@
+/* CircularNavbar.css */
+
+.circular-navbar-container {
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .circular-navbar-container .planet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .circular-navbar-container .planet .react-planet__ring {
+    /* Comment out or remove this line to show the orbit ring */
+    /* display: none; */
+  }
+  
+  .circular-navbar-container .planet .react-planet__ball {
+    background-color: #007bff; /* Ball color */
+    color: #fff; /* Text color for category items */
+    width: 40px; /* Adjust the width and height as needed */
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+  }
+  
+  .circular-navbar-container .planet .react-planet__ball:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+  }
+  
+  .circular-navbar-container .planet .react-planet__ball:nth-child(1) {
+    transform: rotate(60deg) translateX(120px);
+  }
+  
+  .circular-navbar-container .planet .react-planet__ball:nth-child(2) {
+    transform: rotate(120deg) translateX(120px);
+  }
+  
+  .circular-navbar-container .planet .react-planet__ball:nth-child(3) {
+    transform: rotate(180deg) translateX(120px);
+  }
+  
+  .circular-navbar-container .planet .react-planet__ball:nth-child(4) {
+    transform: rotate(240deg) translateX(120px);
+  }
+  
+  .circular-navbar-container .planet .react-planet__ball:nth-child(5) {
+    transform: rotate(300deg) translateX(120px);
+  }
+  
+  .circular-navbar-container .planet .react-planet__ball:nth-child(6) {
+    transform: rotate(360deg) translateX(120px);
+  }
+  
