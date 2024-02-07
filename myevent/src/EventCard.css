@@ -127,7 +127,15 @@
   box-sizing: border-box;
   border-radius: 15px; /* Add some border-radius for rounded corners */
   background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background for better visibility */
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
+
 }
+.event-card:hover {
+  transform: scale(1.05); /* Adjust the scale factor as needed */
+}
+
 
 .event-card-content {
   flex: 1;
@@ -154,14 +162,30 @@
   background-color: #2196f3; /* Set your desired background color for types */
   padding: 5px 10px;
   border-radius: 5px; /* Add some border-radius for rounded corners */
-}
+  opacity: 0; /* Initially hide the tags */
+  transform: translateX(100%); /* Initial position off the card */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Add transition for smooth effect */
 
+}
+.event-card:hover .event-card-types h5 {
+  opacity: 1;
+  transform: translateX(0); /* Move tags in from the right */
+}
 .event-card-description {
-  font-size: 14px; /* Set your desired font size */
+  font-size: 14px;
   color: white;
   margin-bottom: 10px;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  transition: bottom 0.3s ease-in-out;
 }
 
+.event-card:hover .event-card-description {
+  bottom: 0;
+}
 .view-details-btn {
   background-color: #4caf50; /* Set your desired background color for the button */
   color: white;
@@ -183,4 +207,95 @@
   background-color: #2196f3;
   padding: 5px 10px;
   border-radius: 5px;
+  
+}
+/*new*/
+/* EventCard.module.css */
+
+.event-card {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  overflow: hidden; /* Add overflow property */
+}
+
+.event-card:hover .event-card-description {
+  bottom: 0; /* Adjust the bottom value as needed */
+}
+
+.event-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-card-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.event-card-types {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.event-card-types h5 {
+  font-size: 16px;
+  color: rgb(37, 218, 5);
+  background-color: #2196f3;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.event-card-description {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: -100%; /* Initially hide the description below the card */
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  transition: bottom 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+
+.view-details-btn {
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+}
+
+.view-details-btn:hover {
+  background-color: #45a049;
+}
+
+.event-card-types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.event-card-tag {
+  font-size: 14px;
+  color: #8A583C;
+  background-color: #F8F09C;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis; 
 }

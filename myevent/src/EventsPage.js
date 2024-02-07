@@ -12,130 +12,130 @@ const EventPage = () => {
   const eventsData = [
     {
       eventName: 'Event 1',
-      eventTag: 'Tag 1',
+      eventTags: ['Coding', 'Gaming'],
       eventDescription: 'Description 1',
       imageUrl: 'https://images.unsplash.com/photo-1605496036006-fa36378ca4ab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
       eventName: 'Event 2',
-      eventTag: 'Tag 2',
+      eventTags: ['Gaming', 'Bussiness & Management'],
       eventDescription: 'Description 2',
       imageUrl: 'https://images.unsplash.com/photo-1605496036006-fa36378ca4ab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
       eventName: 'Event 3',
-      eventTag: 'Tag 3',
+      eventTags: ['Bussiness & Management', 'Brainstorming'],
       eventDescription: 'Description 3',
       imageUrl: 'https://images.unsplash.com/photo-1605496036006-fa36378ca4ab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
       eventName: 'Event 4',
-      eventTag: 'Tag 4',
+      eventTags: ['Brainstorming', 'Circuits & Robotics'],
       eventDescription: 'Description 4',
       imageUrl: 'https://images.unsplash.com/photo-1605496036006-fa36378ca4ab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
       eventName: 'Event 5',
-      eventTag: 'Tag 5',
+      eventTags: ['Circuits & Robotics', 'Misc'],
       eventDescription: 'Description 5',
       imageUrl: 'https://images.unsplash.com/photo-1605496036006-fa36378ca4ab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
       eventName: 'Event 6',
-      eventTag: 'Tag 6',
+      eventTags: ['Coding', 'Gaming'],
       eventDescription: 'Description 6',
       imageUrl: 'https://images.unsplash.com/photo-1605496036006-fa36378ca4ab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
       eventName: 'Event 7',
-      eventTag: 'Tag 1',
+      eventTags: ['Gaming', 'Bussiness & Management'],
       eventDescription: 'Description 7',
       imageUrl: 'https://images.unsplash.com/photo-1605496036006-fa36378ca4ab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
       eventName: 'Event 8',
-      eventTag: 'Tag 2',
+      eventTags: ['Bussiness & Management', 'Brainstorming'],
       eventDescription: 'Description 8',
       imageUrl: 'https://images.unsplash.com/photo-1605496036006-fa36378ca4ab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
       eventName: 'Event 9',
-      eventTag: 'Tag 3',
+      eventTags: ['Brainstorming', 'Circuits & Robotics'],
       eventDescription: 'Description 9',
       imageUrl: 'https://images.unsplash.com/photo-1605496036006-fa36378ca4ab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
       eventName: 'Event 10',
-      eventTag: 'Tag 4',
+      eventTags: ['Circuits & Robotics', 'Misc'],
       eventDescription: 'Description 10',
       imageUrl: 'https://images.unsplash.com/photo-1605496036006-fa36378ca4ab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
       eventName: 'Event 11',
-      eventTag: 'Tag 5',
+      eventTags: ['Coding', 'Gaming'],
       eventDescription: 'Description 11',
       imageUrl: 'https://images.unsplash.com/photo-1605496036006-fa36378ca4ab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
       eventName: 'Event 12',
-      eventTag: 'Tag 6',
+      eventTags: ['Gaming', 'Bussiness & Management'],
       eventDescription: 'Description 12',
       imageUrl: 'https://images.unsplash.com/photo-1605496036006-fa36378ca4ab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
       eventName: 'Event 13',
-      eventTag: 'Tag 1',
+      eventTags: ['Bussiness & Management', 'Brainstorming'],
       eventDescription: 'Description 13',
       imageUrl: 'https://images.unsplash.com/photo-1605496036006-fa36378ca4ab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
       eventName: 'Event 14',
-      eventTag: 'Tag 2',
+      eventTags: ['Brainstorming', 'Circuits & Robotics'],
       eventDescription: 'Description 14',
       imageUrl: 'https://images.unsplash.com/photo-1605496036006-fa36378ca4ab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
       eventName: 'Event 15',
-      eventTag: 'Tag 3',
+      eventTags: ['Circuits & Robotics', 'Misc'],
       eventDescription: 'Description 15',
       imageUrl: 'https://images.unsplash.com/photo-1605496036006-fa36378ca4ab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
       eventName: 'Event 16',
-      eventTag: 'Tag 4',
+      eventTags: ['Coding', 'Gaming'],
       eventDescription: 'Description 16',
       imageUrl: 'https://images.unsplash.com/photo-1605496036006-fa36378ca4ab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
       eventName: 'Event 17',
-      eventTag: 'Tag 5',
+      eventTags: ['Gaming', 'Bussiness & Management'],
       eventDescription: 'Description 17',
       imageUrl: 'https://images.unsplash.com/photo-1605496036006-fa36378ca4ab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
       eventName: 'Event 18',
-      eventTag: 'Tag 6',
+      eventTags: ['Bussiness & Management', 'Brainstorming'],
       eventDescription: 'Description 18',
       imageUrl: 'https://images.unsplash.com/photo-1605496036006-fa36378ca4ab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
       eventName: 'Event 19',
-      eventTag: 'Tag 1',
+      eventTags: ['Brainstorming', 'Circuits & Robotics'],
       eventDescription: 'Description 19',
       imageUrl: 'https://images.unsplash.com/photo-1605496036006-fa36378ca4ab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
       eventName: 'Event 20',
-      eventTag: 'Tag 2',
+      eventTags: ['Circuits & Robotics', 'Misc'],
       eventDescription: 'Description 20',
       imageUrl: 'https://images.unsplash.com/photo-1605496036006-fa36378ca4ab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
   ];
-  const allTags = ['All Events', ...new Set(eventsData.map(event => event.eventTag))];
+  const allTags = ['All Events', ...new Set(eventsData.flatMap(event => event.eventTags))];
 
   const filteredEvents = selectedCategory
-  ? eventsData.filter((event) => event.eventTag === selectedCategory)
-  : eventsData;
+    ? eventsData.filter((event) => event.eventTags.includes(selectedCategory))
+    : eventsData;
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category === 'All Events' ? null : category);
@@ -145,21 +145,18 @@ const EventPage = () => {
     <div className="event-page">
       <Navbar tags={allTags} onTagClick={handleCategoryClick} />
 
-      <div className="meteor-background">
-        <iframe
-          src="https://i.gifer.com/fxac.gif"
-          width="100%"
-          height="85.75%"
-          style={{ position: 'absolute', top: 0, left: 0 }}
-          frameBorder="0"
-          allowFullScreen
-        ></iframe>
-      </div>
-      <p>
-        <a href="https://gifer.com"></a>
-      </p>
+      <div className="meteor-background" style={{ backgroundImage: 'url("https://img.freepik.com/free-photo/humanoid-robot-working-with-machine-factory-ai-generative_123827-23865.jpg?w=900&t=st=1707326092~exp=1707326692~hmac=65bce3ce3d926fa0b44d5abea939d2692aff08a8dbea5fe80eb37aba6198dc94")', backgroundSize: 'cover', backgroundPosition: 'center', width: '100%', height: '87.75vh', position: 'relative', marginBottom: 0 }}>
+</div> 
+ {/*<div className="meteor-background">
+        <img
+          src="https://srijanju.in/_next/image?url=%2Fassets%2FVector.png&w=256&q=75"
+          alt="Logo"
+          className="logo"
+        />
+</div>*/}
 
-      <h1 className="event-title">Events</h1>
+
+      <h1 className="event-title">Events</h1> 
 
       <div className="events-navbar">
         <ul>
@@ -169,13 +166,13 @@ const EventPage = () => {
             </li>
           ))}
         </ul>
-      </div>
+          </div> 
       <div className="event-cards-container">
         {filteredEvents.map((event, index) => (
           <EventCard key={index} {...event} />
         ))}
       </div>
-     <div className="footer">
+     {/*<div className="footer">
         <p>Srijan is back!</p>
         <p>
           Presented at the heart of Kolkata, the largest techno-management festival is set to run at Jadavpur University from March 21st to 24th, 2024.
@@ -186,8 +183,8 @@ const EventPage = () => {
           Don't miss a beat– from groundbreaking competitions to inspiring talks, Srijan 2024 promises an unforgettable experience.
           Fasten your seatbelts for a feat of unshackling thoughts!!
         </p>
+        </div> */} 
       </div>
-    </div>
   );
 };
 
