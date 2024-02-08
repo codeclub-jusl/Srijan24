@@ -6,10 +6,14 @@ import React, { useState } from 'react';
 import Navbar from './Navbar';
 import EventCard from './EventCard'; // Assuming you have the EventCard component
 import './EventPage.css';
-import CircularNavbar from './CircularNavbar'; // Import the CircularNavbar component
+//import CircularNavbar from './CircularNavbar'; // Import the CircularNavbar component
+
+
 
 const EventPage = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
+  const [searchQuery, setSearchQuery] = useState('');
+
   const eventsData = [
     {
       eventName: 'Event 1',
@@ -134,9 +138,17 @@ const EventPage = () => {
   ];
   const allTags = ['All Events', ...new Set(eventsData.flatMap(event => event.eventTags))];
 
+  const handleSearchChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
   const filteredEvents = selectedCategory
+  ? eventsData.filter((event) => event.eventTags.includes(selectedCategory) && event.eventName.toLowerCase().includes(searchQuery.toLowerCase()))
+  : eventsData.filter((event) => event.eventName.toLowerCase().includes(searchQuery.toLowerCase()));
+
+  /*const filteredEvents = selectedCategory
     ? eventsData.filter((event) => event.eventTags.includes(selectedCategory))
-    : eventsData;
+    : eventsData;*/
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category === 'All Events' ? null : category);
@@ -161,6 +173,10 @@ const EventPage = () => {
 
       <h1 className="event-title" >Events</h1> 
 
+      <div className="search-bar-container">
+        <input type="text" value={searchQuery} onChange={handleSearchChange} placeholder="Search event name" className="search-bar" />
+      </div>
+
       <div className="events-navbar">
         <ul>
           {allTags.map((tag, index) => (
@@ -169,13 +185,14 @@ const EventPage = () => {
             </li>
           ))}
         </ul>
-          </div> 
-      <div className="event-cards-container">
-        {filteredEvents.map((event, index) => (
-          <EventCard key={index} {...event} />
-        ))}
       </div>
-     {/*<div className="footer">
+
+          <div className="event-cards-container">
+  {filteredEvents.map((event, index) => (
+    <EventCard key={index} {...event} isButtonDisabled={true} />
+  ))}
+</div>
+    {/*<div className="footer">
         <p>Srijan is back!</p>
         <p>
           Presented at the heart of Kolkata, the largest techno-management festival is set to run at Jadavpur University from March 21st to 24th, 2024.

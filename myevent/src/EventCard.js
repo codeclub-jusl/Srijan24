@@ -59,7 +59,7 @@ export default EventCard; */
 import React from 'react';
 import './EventCard.css'; // Import the CSS file
 
-const EventCard = ({ eventName, eventTags, imageUrl, exploreLink,eventDescription }) => {
+const EventCard = ({ eventName, eventTags, imageUrl, exploreLink, eventDescription, isButtonDisabled }) => {
   // Assign dummy values to eventTags if it's undefined
   const dummyTags = eventTags;
 
@@ -77,9 +77,15 @@ const EventCard = ({ eventName, eventTags, imageUrl, exploreLink,eventDescriptio
             </div>
           ))}
         </div>
-        <div className="Dashboard_exploreEventButton__VLbHB">
-          <a href={exploreLink}>Explore Event</a>
-        </div>
+        {isButtonDisabled ? (
+          <div className="Dashboard_exploreEventButton__VLbHB disabled">
+            <span>Explore Event</span>
+          </div>
+        ) : (
+          <div className="Dashboard_exploreEventButton__VLbHB">
+            <a href={exploreLink}>Explore Event</a>
+          </div>
+        )}
         {/*<div className="event-card-description-popup">
           <p className="event-card-description">{eventDescription}</p>
           </div> */}
