@@ -166,3 +166,46 @@ body {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 10px rgba(147, 112, 219, 0.8), 0 0 20px rgba(147, 112, 219, 0.8), 0 0 30px rgba(147, 112, 219, 0.8);
   }
+
+  /* Media Queries for Mobile */
+  /* Media Queries for Mobile */
+  /* Media Queries for Mobile */
+/* Media Queries for Mobile */
+
+/* Media Queries for Mobile */
+@media only screen and (max-width: 1000px) {
+  .event-title {
+      font-size: 2em;
+      top: 7.5%; /* Adjusted top position to make sure it remains above the event navbar */
+  }
+
+  .events-navbar {
+      top: 300px;
+  }
+
+  .events-navbar ul {
+      flex-direction: column;
+  }
+
+  .events-navbar li {
+      position: relative; /* Added to make sure "Events" text stays on top */
+      z-index: 2; /* Added to make sure "Events" text stays on top */
+  }
+
+  .event-cards-container {
+      top: 60px; /* Adjusted top position to make space for "Events" text */
+  }
+
+  .search-bar {
+      width: 100%; /* Adjusted width for smaller screens */
+  }
+
+  /* Additional styles to prevent "All Events" from pushing down "Events" text */
+  .events-navbar .dropdown-content {
+      position: absolute;
+      top: 25px; /* Adjust as needed to prevent overlap with "Events" text */
+  }
+  .events-navbar .dropdown-content .events-text {
+    display: none;
+  }
+}

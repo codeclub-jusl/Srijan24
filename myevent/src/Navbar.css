@@ -1,70 +1,144 @@
-/* Navbar.css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+/* navbar */
 .navbar {
-    background-color: #121d33; /* Dark bluish background color */
-    background-image: url('https://gifer.com/embed/6IX'); /* Use the meteor GIF */
-    color: #deeae3f0; /* White text color */
-    padding: 10px 20px; /* Adjust padding as needed */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: rgb(158, 22, 224);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  min-height: 70px;
+}
+.navbar.active {
+  background-color: rgb(158, 22, 224);
+}
+/* logo  */
+.logo {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ul  */
+.navMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(155, 58, 224);
+  gap: 60px;
+}
+
+/* media queries */
+@media screen and (max-width: 780px) {
+  /* hamburger */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    background-color: #120f0b;
+    width: 20px;
+    height: 3px;
+    display: block;
+    margin: 5px;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+
+  /* adding active class to the bars  */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* navMenu */
+
+  .navMenu {
+    position: absolute;
+    flex-direction: column;
+    gap: 0;
+    top: 70px;
+    left: -100%;
+    text-align: start;
+    width: 100%;
+    transition: 0.7s ease-in-out;
+    background-color: aliceblue;
+    padding: 10px;
+  }
+
+  .navMenu.active {
+    left: 0;
+  }
+
+  .navMenu li {
+    margin: 16px 0;
+  }
+
+  /* Additional styles for mobile responsiveness */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navMenu {
+    display: none; /* Hide the navigation links initially */
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    background-color: aliceblue; /* Dark bluish background color */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow */
     border-radius: 10px; /* Add border radius */
-    width: 80%; /* Set navbar width to 80% of the website */
-    margin: 0 auto; /* Center the navbar */
-    transition: box-shadow 0.3s ease;
+    z-index: 1;
   }
-  .nav-links li::after {
-    transition: width 0.3s ease, background-color 0.3s ease;
-  }
-  .logo {
-    font-size: 1.5em; /* Adjust font size as needed */
-    font-weight: bold;
-  }
-  
-  .menu {
-    font-size: 1.2em; /* Adjust font size as needed */
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px; /* Add spacing between navigation links */
-  }
-  
-  .nav-links li {
-    cursor: pointer;
-    position: relative;
-  }
-  
-  .nav-links li:hover::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #ffffff; /* White underline color on hover */
-    bottom: -5px;
-  }
-  
-  .auth {
-    font-size: 1.2em; /* Adjust font size as needed */
-  }
-  
-  .auth span {
-    margin: 0 10px; /* Add spacing between login and signout */
-    cursor: pointer;
-  }
-  
-  /* Add any additional styling based on your preferences */
-  
-  /* Animation for a smooth transition */
-  .navbar {
-    transition: box-shadow 0.3s ease;
-  }
-  
-  .nav-links li::after {
-    transition: width 0.3s ease, background-color 0.3s ease;
-  }
-  /* Your existing styles here */
 
-/* Additional styles for mobile responsiveness */
+  .navMenu.active {
+    display: flex; /* Show the navigation links when the menu is clicked */
+  }
+
+  .navMenu li {
+    width: 100%; /* Make each link take the full width */
+  }
+
+  .menu {
+    font-size: 1.5em; /* Increase font size for the hamburger icon */
+    cursor: pointer;
+    display: block;
+  }
+
+  .auth {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1em; /* Adjust font size for mobile */
+  }
+
+  .auth span {
+    margin: 5px 0; /* Add spacing between login and signout */
+    cursor: pointer;
+  }
+
+  .logo {
+    margin-bottom: 10px; /* Add some spacing between the logo and menu */
+  }
+}
