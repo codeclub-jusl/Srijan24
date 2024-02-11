@@ -171,7 +171,8 @@ const EventPage = () => {
 </div>*/}
 
 
-      {/*<h1 className="event-title" >Events</h1>  */}
+      <h1 className="event-title" >Events</h1> 
+
 
       <div className="search-bar-container">
         <input type="text" value={searchQuery} onChange={handleSearchChange} placeholder="Search event name" className="search-bar" />

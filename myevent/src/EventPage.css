@@ -44,13 +44,15 @@ body {
   .event-title {
     font-size: 3em; /* Adjust font size as needed */
     font-weight: bold;
-    color: #ffffff;
-    position: absolute;
-    top: 13%; /* Adjust the percentage or use pixels to move it up or down */
+    color: #aae8d3e5; /* Original color */
+    position:absolute;
+    top: 13%; /* Adjust the percentage or use pixels to move it up or dowSn */
     left: 50%;
     transform: translate(-50%, -50%);
-    /* Add any other styling for the event title */
-  } 
+    /*text-shadow: 0 0 10px #15de12a2, 0 0 20px #15de12a2, 0 0 30px #15de12a2, 0 0 40px #8b00ff; /* Purple neon text shadow */
+    /*box-shadow: 0 0 20px #8b00ff, 0 0 40px #8b00ff, 0 0 60px #8b00ff; /* Emanating light box shadow */
+  }
+  
   .events-navbar {
     
     width: 100%;
@@ -173,6 +175,7 @@ body {
   .event-title {
       font-size: 2em;
       top: 7.5%; /* Adjusted top position to make sure it remains above the event navbar */
+      position:fixed;
   }
 
   .events-navbar {
