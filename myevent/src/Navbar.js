@@ -30,9 +30,9 @@ import './Navbar.css';
 
 const Navbar = () => {
   // Adding the states
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(false); //usestates being used in here 
 
-  // Add the active class
+  // Add the active class 
   const toggleActiveClass = () => {
     setIsActive(!isActive);
   };
@@ -71,6 +71,11 @@ const Navbar = () => {
             Log In  
           </a>
         </li>
+        {/*<li onClick={removeActive}>
+          <a href="#home" className="navLink">
+            Gg
+          </a>
+  </li> */}
         <li onClick={removeActive}>
           <a href="#home" className="navLink">
             Sign Out  

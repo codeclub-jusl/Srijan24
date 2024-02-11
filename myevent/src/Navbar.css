@@ -16,7 +16,7 @@ a {
 
 /* navbar */
 .navbar {
-  background-color: rgb(158, 22, 224);
+  background-color: rgb(158, 22, 224);  
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -109,7 +109,7 @@ a {
     background-color: aliceblue; /* Dark bluish background color */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow */
     border-radius: 10px; /* Add border radius */
-    z-index: 1;
+    z-index: 1;/* z index is for giving priority to the element for considering it in the background  */
   }
 
   .navMenu.active {
