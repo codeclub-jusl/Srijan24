@@ -78,9 +78,9 @@ const EventCard = ({ eventName, eventTags, imageUrl, exploreLink, eventDescripti
           ))}
         </div>
         {isButtonDisabled ? (
-          <div className="Dashboard_exploreEventButton__VLbHB disabled">
+          <button className="Dashboard_exploreEventButton__VLbHB disabled">
             <span>Explore Event</span>
-          </div>
+          </button>
         ) : (
           <div className="Dashboard_exploreEventButton__VLbHB">
             <a href={exploreLink}>Explore Event</a>

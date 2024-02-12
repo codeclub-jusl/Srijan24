@@ -99,7 +99,7 @@
     font-weight: bold;
   }
   
-  .Dashboard_exploreEventButton__VLbHB {
+  /*.Dashboard_exploreEventButton__VLbHB {
     background: green;
     display: inline-block;
     padding: 6px 20px;
@@ -114,7 +114,106 @@
   .Dashboard_exploreEventButton__VLbHB a {
     color: white;
     text-decoration: none;
+  } */
+  /* Add the following styles to your existing CSS */
+.Dashboard_exploreEventButton__VLbHB {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out;
+
+  border: 2px solid transparent;
+
+}
+
+.Dashboard_exploreEventButton__VLbHB:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  border: 2px solid transparent;
+
+}
+
+.Dashboard_exploreEventButton__VLbHB:active {
+  color: #000;
+  border-color: #000;
+
+}
+
+.Dashboard_exploreEventButton__VLbHB:active:after {
+  background: transparent;
+  border-color: transparent;
+
+}
+
+.Dashboard_exploreEventButton__VLbHB:hover:before {
+  opacity: 1;
+  border-color: #ff0000; 
+}
+
+.Dashboard_exploreEventButton__VLbHB:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  border-color: transparent;
+
+}
+/*.Dashboard_exploreEventButton__VLbHB:hover:before,
+.Dashboard_exploreEventButton__VLbHB:hover {
+    /* ... (existing styles) ... */
+    /*animation: glowing-border 2s linear infinite;
+    border-color: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+}*/
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+@keyframes glowing-border {
+  0% {
+      border-color: #ff0000;
   }
+  50% {
+      border-color: #ff7300;
+  }
+  100% {
+      border-color: #ff0000;
+  }
+}
+/* ... (rest of your existing styles) ... */
+
   /* EventCard.css */
 
 .event-card {
@@ -162,15 +261,12 @@
   background-color: #2196f3; /* Set your desired background color for types */
   padding: 5px 10px;
   border-radius: 5px; /* Add some border-radius for rounded corners */
-  opacity: 0; /* Initially hide the tags */
+    opacity: 0; /* Initially hide the tags */
   transform: translateX(100%); /* Initial position off the card */
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Add transition for smooth effect */
 
 }
-.event-card:hover .event-card-types h5 {
-  opacity: 1;
-  transform: translateX(0); /* Move tags in from the right */
-}
+
 .event-card-description {
   font-size: 14px;
   color: white;
