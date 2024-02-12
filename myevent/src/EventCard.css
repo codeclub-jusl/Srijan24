@@ -171,6 +171,18 @@
 
 }
 
+.Dashboard_exploreEventButton__VLbHB:hover {
+  border-color: transparent; /* Hide the border color on hover */
+}
+.Dashboard_exploreEventButton__VLbHB:hover:before {
+  opacity: 1;
+  background-position: 100% 0; /* Start the linear gradient from the right */
+}
+
+.Dashboard_exploreEventButton__VLbHB:hover:after {
+  background: transparent; /* Hide the background color on hover */
+}
+
 .Dashboard_exploreEventButton__VLbHB:hover:before {
   opacity: 1;
   border-color: #ff0000; 

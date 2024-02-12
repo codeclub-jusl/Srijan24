@@ -188,11 +188,18 @@ const EventPage = () => {
         </ul>
       </div>
 
-          <div className="event-cards-container">
-  {filteredEvents.map((event, index) => (
-    <EventCard key={index} {...event} isButtonDisabled={true} />
-  ))}
+      <div className="event-cards-container">
+  {filteredEvents.length > 0 ? (
+    filteredEvents.map((event, index) => (
+      <EventCard key={index} {...event} isButtonDisabled={true} />
+    ))
+  ) : (
+    <div className="no-event-found-text">
+      No events found. Try a different search term.
+    </div>
+  )}
 </div>
+
     {/*<div className="footer">
         <p>Srijan is back!</p>
         <p>
