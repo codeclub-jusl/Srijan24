@@ -9,7 +9,7 @@ const registeredevents = () => {
             </div>
             <div className="container">
 
-                <h1 className="heading">Your Registered Events 😊❤️ !!</h1>
+                <h1 className="heading">Your Registered Events !!</h1>
 
                 <div className="box-container">
 
@@ -65,3 +65,4 @@ const registeredevents = () => {
 }
 
 export default registeredevents
+
