@@ -195,7 +195,7 @@ const page = ({ params }) => {
     }
 
     return (
-        <div className='bg-gradient-to-br from-black via-sky-950 to-black text-white min-h-screen flex justify-center items-center font-body'>
+        <div className='bg-gradient-to-br from-black via-cyan-950 to-black text-white min-h-screen flex justify-center items-center font-body'>
             <div className='container mx-auto px-4 py-8'>
                 <h1 className='text-4xl font-bold mb-6 text-center'>
                     <span

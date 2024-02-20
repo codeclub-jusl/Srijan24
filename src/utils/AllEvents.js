@@ -3,8 +3,8 @@ const events = [
         eventId: 'openaimer',
         eventName: 'OpenAImer',
         eventDate: {
-            prelims: ['15th-22nd March 2024'],
-            finals: '23rd or 24th March 2024 (Time TBD)',
+            prelims: ['TBD'],
+            finals: 'TBD',
         },
         eventType: 'Coding',
         eventHashtags: ['hackathon', 'machinelearning' , 'ai' , 'openaimer'],
