@@ -249,6 +249,18 @@ const page = ({ params }) => {
                                 )}
                             </ul>
                         </div>
+                        {eventData.prize && (
+                                <div className='flex flex-col p-5 shadow-2xl'>
+                                <p className='mb-2'>
+                                    <strong className='text-xl md:text-2xl'>
+                                    Prize:
+                                    </strong>
+                                </p>
+                                <p className='text-sm md:text-lg'>
+                                    {eventData.prize}
+                                </p>
+                                </div>
+                            )}
 
                         <div className='flex flex-col p-5 shadow-2xl '>
                             <p className='mb-2'>

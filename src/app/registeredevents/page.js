@@ -4,7 +4,7 @@ import EventPage from '@/components/EventComponents/EventPage'
 const RegisteredEvents = () => {
   return (
     <div>
-        <EventPage eventsId={['007']} pageType='Registered Events'/>
+        <EventPage eventsId={['007']} pageType='Registered Events' bgColor='green'/>
     </div>
   )
 }
