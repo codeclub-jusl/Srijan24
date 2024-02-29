@@ -249,68 +249,6 @@ const events = [
             ],
         },
     },
-    {
-        eventId: 'Climb-On',
-        eventName: 'Climb On',
-        eventDate: {
-            prelims: ['23rd March, Artificial Rock climbing Wall'],
-            finals: '24th March, Artificial Rock climbing Wall',
-        },
-        eventType: 'Climbing',
-        eventHashtags: ['climbing', 'Adventure'],
-        eventCoordinators: [
-            'Aman Mahato [ 9832267430 ]',
-            'Abhijeet Nona [ 6289282196 ]', 
-            'Gunendra Singh [ 6200076728 ]',
-        ],
-        prize: ["prize pool of Rs.6000"],
-        minMembers: 1,
-        maxMembers: 1,
-        eventPoster: '/images/events/ClimbOn.png',
-        registrationType: `Srijan'24 Website`,
-        eventShortDescription: `The participants will need to climb the artificial wall and score points based on their performacne.`,
-        eventDescription: [`Climb On is a climbing competition for individuals who want to challenge themselves and compete with other climbers. 
-        The event is organized by Jadavpur University Mountaineering and Hiking Club (JUMHC). It is a great opportunity for climbers to
-        showcase their skills and stamina, and have a thrilling experience.
-        The event has two rounds: Prelims and Finals.
-        In the Prelims, the participants are divided into two categories: Men and Women. They have to climb as high as they can in five minutes, and their scores are based on height and time.
-        The top ten scorers from each category qualify for the Finals, where they have to climb in three minutes.
-        The top three scorers from each category win cash prizes and certificates. The event is open for all ages and levels of climbers.`],
-        eventRules: {
-            "": [
-                "Each participant will be given a time of 5 minutes to climb.",
-                "Points will be given on the basis of height climbed and time utilized.",
-                "Some areas on the climbing wall are not allowed to be touched. (Will be explained during the event.)",
-                "The judges' decision will be considered final."
-            ],
-        },
-    },
-    {
-        eventId: 'robosoccer',
-        eventName: 'ROBOSOCCER',
-        eventDate: {
-            prelims: ['22/3/24'],
-            finals: '23/3/24(Finals) [TENTATIVE]',
-        },
-        eventType: 'Circuits & Robotics',
-        eventHashtags: ['football','ball','soccer','robo', 'robots'],
-        eventCoordinators: [
-            'Sukalyan Bisui [ 8697488984 ]',
-            'Adipto Ghosh Dastidar [ 6290764395 ]',
-        ],
-        prize: ["prize pool of Rs.2000"],
-        minMembers: 1,
-        maxMembers: 5,
-        eventPoster: '/images/events/Robosoccer.png',
-        registrationType: `Srijan'24 Website`,
-        eventShortDescription: `Robots playing soccer`,
-        eventDescription: [`https://docs.google.com/document/d/11T7RU_-vUNgSap0WcAMY0VL8hvi80Eqf-3RkAn7tRYg/edit?usp=sharing`],
-        eventRules: {
-            "": [
-                "https://docs.google.com/document/d/11T7RU_-vUNgSap0WcAMY0VL8hvi80Eqf-3RkAn7tRYg/edit?usp=sharing"
-            ],
-        },
-    },
     // {
     //     eventId: 'ace-the-case',
     //     eventName: 'Ace The Case',
